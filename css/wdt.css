@@ -1,0 +1,32 @@
+* {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+	min-height: 840px;
+	width: 100%;
+}
+
+.wrapper{
+	position: absolute;
+	min-width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-block-start: 81px;
+    padding-block-end: 80px;
+    padding-inline: 24px;
+}
+
+.description {
+    color: var(--CL-Grey, #737373);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+    max-width: 420px;
+}
