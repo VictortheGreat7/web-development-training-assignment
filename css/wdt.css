@@ -29,7 +29,8 @@ body{
 
     &>svg {
         max-width: 77.333px;
-        height: 80px;
+        min-height: 80px;
+        max-height: 80px;
     }
 }
 
