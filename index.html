@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:wght@300;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <title>Sign Up</title>
@@ -139,8 +139,8 @@
           on increasing productivity, and improving organization wellness.
         </p>
         <p class="description2">
-          Start benefiting from the wellness experience. For companies looking
-          on increasing productivity, and improving organization wellness.
+          Inspiring wholesome harmony for the mind, body and spirit, for
+          everyone, everywhere.
         </p>
       </div>
       <div class="container">
@@ -148,48 +148,94 @@
           <div class="row">
             <div class="input">
               <label for="firstName">First Name</label>
-              <input type="text" />
+              <input
+                type="text"
+                id="firstName"
+                placeholder="First Name"
+                title="First Name"
+                required
+              />
             </div>
             <div class="input">
               <label for="lastName">Last Name</label>
-              <input type="text" />
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Last Name"
+                title="Last Name"
+                required
+              />
             </div>
           </div>
           <div class="row">
             <div class="input">
               <label for="gender">Gender</label>
-              <input type="text" />
+              <input
+                type="text"
+                id="gender"
+                placeholder="Select here"
+                title="Gender"
+                required
+              />
             </div>
             <div class="input">
               <label for="">Date of Birth</label>
-              <input type="text" />
+              <input
+                type="text"
+                id="dob"
+                placeholder="Select here"
+                title="Date of Birth"
+                required
+              />
             </div>
           </div>
           <div class="row">
             <div class="input">
               <label for="weight">Weight</label>
-              <input type="text" />
+              <input
+                type="text"
+                id="weight"
+                placeholder="Enter Weight"
+                title="Weight"
+                required
+              />
             </div>
             <div class="input">
               <label for="height">Height</label>
-              <input type="text" />
+              <input
+                type="text"
+                id="height"
+                placeholder="Enter height here"
+                title="Height"
+                required
+              />
             </div>
           </div>
-          <div>
+          <div class="other_input">
             <label for="">Activity Level</label>
-            <input type="text" />
+            <input
+              type="text"
+              id="level"
+              placeholder="Select here"
+              title="Activity Level"
+              required
+            />
           </div>
-          <div>
+          <div class="other_input">
             <label for="password">Password</label>
-            <input type="password" />
+            <input type="password" id="password" title="Password" required />
           </div>
           <button>Register</button>
         </form>
-        <footer>
-          By clicking Register, you agree to our Terms of Use and our Privacy
-          Policy
+        <footer class="bigger_screen">
+          By clicking Register, you agree to our&nbsp;<a href="">Terms of Use</a
+          >&nbsp;and our&nbsp;<a href="">Privacy Policy</a>
         </footer>
       </div>
+      <footer class="smaller_screen">
+        By clicking Register, you agree to our&nbsp;<a href="">Terms of Use</a
+        >&nbsp;and our&nbsp;<a href="">Privacy Policy</a>
+      </footer>
     </div>
   </body>
 </html>

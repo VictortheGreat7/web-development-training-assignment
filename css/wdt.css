@@ -29,12 +29,11 @@ body{
 
     &>svg {
         max-width: 77.333px;
-        max-height: 80px;
+        height: 80px;
     }
 }
 
 .plan_name {
-    background: red;
     color: var(--CL-Black, #000B0A);
     font-size: 40px;
     font-style: normal;
@@ -65,9 +64,8 @@ body{
 }
 
 .container {
-    width: 580px;
-    height: 679px;
-    flex-shrink: 0;
+    max-width: 580px;
+    height: fit-content;
     border-radius: 6px;
     background: #FFF;
     box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
@@ -84,6 +82,17 @@ body{
 .input {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+.other_input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &>input {
+        max-width: 500px;
+    }
 }
 
 label {
@@ -91,7 +100,7 @@ label {
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    line-height: 14px;
     letter-spacing: 0.1px;
 
     &~input {
@@ -101,15 +110,171 @@ label {
         font-weight: 400;
         line-height: 20px; /* 142.857% */
         letter-spacing: 0.2px;
-        width: 238px;
         height: 48px;
         padding-inline-start: 16px;
-        border: 1px solid hsla(0, 0%, 94%, 1);
+        border: 1.4px solid hsla(0, 0%, 94%, 1);
         border-radius: 2px;
 
         &:focus-visible {
+            transition: 0.3s ease 0s;
             border: 1px solid hsla(174, 62%, 47%, 1);
             outline: 3px solid hsla(174, 62%, 47%, 0.06);
         }
+    }
+}
+
+input {
+    margin-block-end: 30px;
+    background-image: url("../assets/images/form-filled-form-filled-u-angle-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+}
+
+#dob {
+    background-image: url("../assets/images/form-filled-form-filled-ua-calendar-alt.svg");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 24px;
+}
+
+#password {
+    background-image: url("../assets/images/form-filled-form-filled-edit-show.svg");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 24px;
+}
+
+#firstName, #lastName, #weight, #height {
+    background-image: none;
+}
+
+button {
+    width: 500px;
+    height: 48px;
+    background: var(--CL-Green, #2EC4B6);
+    border: 0;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.10);
+    margin-block-end: 16px;
+    color: var(--Basic-100, #FFF);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}
+
+footer {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+    display: flex;
+    justify-content: center;
+
+    &>a {
+        color: var(--CL-Green, #2EC4B6);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px;
+        text-decoration-line: underline;
+    }
+}
+
+footer.smaller_screen {
+    display: none;
+}
+
+@media(max-width:375.5px) {
+    .wrapper{
+        flex-direction: column;
+        gap: 24px;
+        height: fit-content;
+        padding-inline: 24px;
+        padding-block-start: 30px;
+        padding-block-end: 64px;
+    }
+
+    .container {
+        font-family: Poppins;
+        padding-block-start: 24px;
+        padding-inline: 16px;
+        padding-block-end: 30px;
+        width: 100%;
+    }
+
+    .plan {
+        padding-block-start: 0px;
+        max-width: 295px;
+        margin-block-end: 16px;
+
+        &>svg {
+            max-width: 38.667px;
+            max-height: 40px;
+        }
+    }
+
+    .plan_name {
+        font-size: 30px;
+        margin-block-start: 40px;
+        margin-block-end: 12px;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .description2 {
+        display: flex;
+        max-width: 295px;
+    }
+
+    .row {
+        gap: unset;
+        grid-template-columns: none;
+    }
+
+    .input {
+        max-width: 295px;
+    }
+
+    .other_input {
+        max-width: 295px;
+    }
+
+    label {
+        display: flex;
+        max-width: fit-content;
+    }
+
+    input{
+        margin-block-end: 24px;
+        max-width: 295px;
+    }
+
+    button {
+        max-width: 295px;
+        margin-block-end: 0;
+    }
+
+    footer.bigger_screen {
+        display: none;
+    }
+
+    footer.smaller_screen {
+        font-family: 'Poppins', sans-serif;
+        display: unset;
+        text-align: center;
+        width: 316px;
     }
 }
