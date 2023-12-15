@@ -26,6 +26,7 @@ body{
     display: flex;
     flex-direction: column;
     padding-block-start: 124px;
+    padding-inline-end: 40px;
 
     &>svg {
         max-width: 77.333px;
