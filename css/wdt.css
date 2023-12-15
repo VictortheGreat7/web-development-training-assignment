@@ -1,5 +1,4 @@
 * {
-    font-family: 'Lato', sans-serif;
     padding: 0;
 	margin: 0;
     box-sizing: border-box;
@@ -16,10 +15,35 @@ body{
 	height: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	padding-block-start: 81px;
     padding-block-end: 80px;
-    padding-inline: 24px;
+    padding-inline: 140px;
+    gap: 120px;
+}
+
+.plan {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-block-start: 124px;
+
+    &>svg {
+        max-width: 77.333px;
+        max-height: 80px;
+    }
+}
+
+.plan_name {
+    background: red;
+    color: var(--CL-Black, #000B0A);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 125% */
+    letter-spacing: -0.8px;
+    max-width: 268px;
+    margin-block-start: 50px;
+    margin-block-end: 20px;
 }
 
 .description {
@@ -29,4 +53,63 @@ body{
     font-weight: 400;
     line-height: 25px; /* 156.25% */
     max-width: 420px;
+}
+
+.description2 {
+    color: var(--CL-Grey, #737373);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px; /* 156.25% */
+    display: none;
+}
+
+.container {
+    width: 580px;
+    height: 679px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--Text-Headings, #011C34);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.1px;
+
+    &~input {
+        color: var(--Text-Headings, #011C34);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.2px;
+        width: 238px;
+        height: 48px;
+        padding-inline-start: 16px;
+        border: 1px solid hsla(0, 0%, 94%, 1);
+        border-radius: 2px;
+
+        &:focus-visible {
+            border: 1px solid hsla(174, 62%, 47%, 1);
+            outline: 3px solid hsla(174, 62%, 47%, 0.06);
+        }
+    }
 }
