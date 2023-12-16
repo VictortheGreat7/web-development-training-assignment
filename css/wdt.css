@@ -10,9 +10,9 @@ body{
 }
 
 .wrapper{
-	position: absolute;
-	min-width: 100%;
-	height: 100%;
+	position: relative;
+	width: fit-content;
+	height: fit-content;
 	display: flex;
 	justify-content: center;
 	padding-block-start: 81px;
@@ -30,13 +30,12 @@ body{
 
     &>svg {
         max-width: 77.333px;
-        min-height: 80px;
         max-height: 80px;
     }
 }
 
 .plan_name {
-    color: var(--CL-Black, #000B0A);
+    color: var(--CL-Black, hsl(175, 100%, 2%));
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -48,7 +47,7 @@ body{
 }
 
 .description {
-    color: var(--CL-Grey, #737373);
+    color: var(--CL-Grey, hsl(0, 0%, 45%));
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -57,7 +56,7 @@ body{
 }
 
 .description2 {
-    color: var(--CL-Grey, #737373);
+    color: var(--CL-Grey, hsl(0, 0%, 45%));
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -66,11 +65,11 @@ body{
 }
 
 .container {
-    max-width: 580px;
+    width: fit-content;
     height: fit-content;
     border-radius: 6px;
     background: #FFF;
-    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    box-shadow: 0px 4px 50px 0px hsla(224, 65%, 5%, 0.1);
     padding: 40px;
     font-family: 'Poppins', sans-serif;
 }
@@ -98,7 +97,7 @@ body{
 }
 
 label {
-    color: var(--Text-Headings, #011C34);
+    color: var(--Text-Headings, 	hsl(208, 96%, 10%));
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -106,7 +105,7 @@ label {
     letter-spacing: 0.1px;
 
     &~input {
-        color: var(--Text-Headings, #011C34);
+        color: var(--Text-Headings, 	hsl(208, 96%, 10%));
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -160,11 +159,11 @@ input {
 button {
     width: 500px;
     height: 48px;
-    background: var(--CL-Green, #2EC4B6);
+    background: var(--CL-Green, 	hsl(174, 62%, 47%));
     border: 0;
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 10px 40px hsla(0, 0%, 0%, 0.1);
     margin-block-end: 16px;
-    color: var(--Basic-100, #FFF);
+    color: var(--Basic-100, hsla(0, 0%, 100%, 1));
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -184,7 +183,7 @@ footer {
     justify-content: center;
 
     &>a {
-        color: var(--CL-Green, #2EC4B6);
+        color: var(--CL-Green, hsla(174.4, 61.98%, 47.45%, 1));
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
